@@ -46,31 +46,43 @@ graph LR
     F --> K["flattened-codebase.xml"]
 ```
 ```mermaid
-graph LR
+flowchart LR
+
     subgraph SRC["Nguồn (repository)"]
-        A["bmad-core/<br/>10 agent · 21 task · 13 template<br/>6 checklist · 6 data · 6 workflow · 4 team"]
-        B["common/<br/>task & util dùng chung"]
-        C["expansion-packs/<br/>5 gói mở rộng"]
+        A["bmad-core/<br>10 agent · 21 task · 13 template<br>6 checklist · 6 data · 6 workflow · 4 team"]
+        B["common/<br>task &amp; util dùng chung"]
+        C["expansion-packs/<br>5 gói mở rộng"]
     end
+
     subgraph TOOL["Tooling (Node.js)"]
-        D["tools/cli.js<br/>build · validate · list"]
-        E["tools/installer<br/>install · update · repair"]
-        F["tools/flattener<br/>codebase → XML"]
+        D["tools/cli.js<br>build · validate · list"]
+        E["tools/installer<br>install · update · repair"]
+        F["tools/flattener<br>codebase → XML"]
     end
+
     subgraph OUT["Đầu ra"]
-        G["dist/agents · dist/teams<br/>dist/expansion-packs<br/>(.txt bundle)"]
-        H[".bmad-core/ trong<br/>project người dùng<br/>+ file rule của IDE"]
+        G["dist/agents · dist/teams<br>dist/expansion-packs<br>(.txt bundle)"]
+        H[".bmad-core/ trong<br>project người dùng<br>+ file rule của IDE"]
     end
-    A --> D --> G
+
+    A --> D
+    D --> G
+
     B --> D
     C --> D
-    A --> E --> H
+
+    A --> E
+    E --> H
+
     B --> E
     C --> E
-    G -.->|upload| I["Web UI<br/>Gemini · ChatGPT · Claude"]
-    H -.->|slash/@ command| J["IDE<br/>16 nền tảng"]
+
+    G -.->|"upload"| I["Web UI<br>Gemini · ChatGPT · Claude"]
+    H -.->|"slash/@ command"| J["IDE<br>16 nền tảng"]
+
     F --> K["flattened-codebase.xml"]
 ```
+
 
 ## Quy ước dùng trong bộ tài liệu
 
