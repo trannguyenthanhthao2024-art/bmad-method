@@ -84,6 +84,21 @@ flowchart LR
 ```
 
 
+## Hai bộ tài liệu thực hành đi kèm
+
+Bốn tài liệu trên là **lý thuyết**. Muốn thấy framework chạy thật với ví dụ cụ thể (gọi lệnh gì → nạp file nào → sinh ra kết quả thế nào), đọc hai kịch bản demo tuần tự:
+
+| Demo | Ví dụ | Đặc điểm |
+|---|---|---|
+| 👉 [`../../demo/README.md`](../../demo/README.md) | Web app ghi chi tiêu **ChiTieu** — dự án mới | 14 file · greenfield · 2 epic · 7 story · gate PASS và FAIL→PASS |
+| 👉 [`../../demo-brownfield/README.md`](../../demo-brownfield/README.md) | Hệ thống bán hàng **BanHang** đã chạy 3 năm, 0 test, 0 tài liệu | 14 file · brownfield · `document-project` · regression test · gate WAIVED |
+
+Bổ sung: [`../../bmad-core-by-agent/README.md`](../../bmad-core-by-agent/README.md) — tài nguyên của từng agent gom một chỗ.
+
+**Điểm vào cấp cao nhất cho mọi bộ tài liệu**: [`../../TAI-LIEU.md`](../../TAI-LIEU.md)
+
+---
+
 ## Quy ước dùng trong bộ tài liệu
 
 - Đường dẫn dạng `bmad-core/agents/dev.md:61` trỏ tới file:dòng trong repository nguồn.

@@ -226,6 +226,9 @@ dependencies:
 | Chạy agent thủ công với LLM | Dán `AGENT-*.md` + `00-shared/core-config.yaml` + file trong `tasks/`, `templates/`, `data/` mà lệnh cần |
 | Biết dán những file nào | Xem [`../docs/bmad-core-manual/13-cong-thuc-van-hanh-thu-cong.md`](../docs/bmad-core-manual/13-cong-thuc-van-hanh-thu-cong.md) — có 4 "kit" copy sẵn |
 | Hiểu ý nghĩa từng task/template | Xem [`../docs/bmad-core-manual/README.md`](../docs/bmad-core-manual/README.md) |
+| **Thấy các agent này phối hợp thật** | [`../demo/README.md`](../demo/README.md) (dự án mới) · [`../demo-brownfield/README.md`](../demo-brownfield/README.md) (dự án đang chạy) |
+| Hiểu kiến trúc/thuật toán bên dưới | [`../docs/specs/02-thiet-ke-he-thong.md`](../docs/specs/02-thiet-ke-he-thong.md) |
+| Điểm vào cho mọi bộ tài liệu | [`../TAI-LIEU.md`](../TAI-LIEU.md) |
 | Sửa hành vi agent thật | Sửa trong `../bmad-core/`, **không** sửa ở đây |
 
 ## Tái tạo lại thư mục này

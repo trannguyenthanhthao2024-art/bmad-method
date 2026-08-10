@@ -5,6 +5,8 @@
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](https://nodejs.org)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289da?logo=discord&logoColor=white)](https://discord.gg/gk8jAdXWmj)
 
+> 🇻🇳 **Tài liệu tiếng Việt**: xem **[TAI-LIEU.md](./TAI-LIEU.md)** — đặc tả, thiết kế, vận hành, cẩm nang tra cứu `bmad-core`, và 2 kịch bản demo tuần tự (greenfield + brownfield).
+
 > ## 🚨 **v4 STABLE - NO NEW FEATURES** 🚨
 >
 > This is the **stable, production-ready v4 version** of BMad Method. It will receive **critical patches only** - no new features will be added.

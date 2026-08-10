@@ -84,6 +84,12 @@ flowchart TD
 
 ---
 
+## Demo này dành cho dự án MỚI. Dự án đang chạy thì sao?
+
+👉 Xem [**`../demo-brownfield/README.md`**](../demo-brownfield/README.md) — kịch bản brownfield: thêm tính năng vào hệ thống đã chạy 3 năm, 0 test, 0 tài liệu. Có `document-project`, regression test cho code legacy, và gate WAIVED.
+
+Bảng so sánh từng bước giữa hai kịch bản: [`../demo-brownfield/12-tong-ket-so-do.md#3`](../demo-brownfield/12-tong-ket-so-do.md)
+
 ## Cách dùng demo này
 
 - **Muốn hình dung nhanh**: đọc [12-tong-ket-so-do.md](./12-tong-ket-so-do.md) trước, rồi quay lại từ file 00.
@@ -91,6 +97,7 @@ flowchart TD
 - **Muốn biết vì sao phải làm vậy**: mỗi file có mục "Cơ chế bên dưới" giải thích quy tắc nào trong `bmad-core` đang chi phối.
 - **Muốn tra cú pháp/quy tắc**: xem [`../docs/bmad-core-manual/README.md`](../docs/bmad-core-manual/README.md).
 - **Muốn chạy thủ công không cài đặt**: xem [`../docs/bmad-core-manual/13-cong-thuc-van-hanh-thu-cong.md`](../docs/bmad-core-manual/13-cong-thuc-van-hanh-thu-cong.md).
+- **Điểm vào cho mọi bộ tài liệu**: [`../TAI-LIEU.md`](../TAI-LIEU.md).
 
 ## Quy ước trình bày trong demo
 

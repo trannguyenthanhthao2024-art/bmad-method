@@ -85,8 +85,19 @@ graph TB
 
 ---
 
+## Muốn thấy các thành phần này chạy thật?
+
+Cẩm nang này là **tra cứu theo thành phần**. Hai bộ demo dưới đây cho thấy các thành phần đó **hoạt động cùng nhau** trên một ví dụ cụ thể, tuần tự từ lệnh đầu tới khi dự án hoàn thành:
+
+| Demo | Dùng cho | Điểm nhấn |
+|---|---|---|
+| 👉 [`../../demo/README.md`](../../demo/README.md) | Dự án **mới** (greenfield) | [09 — QA review → gate PASS](../../demo/09-story-1-1-qa.md) · [10 — story rủi ro cao, gate FAIL→PASS](../../demo/10-story-1-2-rui-ro-cao.md) |
+| 👉 [`../../demo-brownfield/README.md`](../../demo-brownfield/README.md) | Dự án **đang chạy** (brownfield) | [03 — `document-project`](../../demo-brownfield/03-document-project.md) · [08 — `*risk` + `*design` bắt buộc](../../demo-brownfield/08-qa-risk-design.md) · [11 — hai lối tắt](../../demo-brownfield/11-loi-tat-thay-doi-nho.md) |
+
 ## Liên quan
 
+- **Điểm vào cấp cao nhất cho mọi bộ tài liệu**: [`../../TAI-LIEU.md`](../../TAI-LIEU.md)
 - Đặc tả – thiết kế – vận hành toàn hệ thống: [`../specs/00-INDEX.md`](../specs/00-INDEX.md)
-- Tài liệu gốc của dự án: `../user-guide.md`, `../core-architecture.md`, `../working-in-the-brownfield.md`
+- Tài nguyên sắp xếp theo từng agent: [`../../bmad-core-by-agent/README.md`](../../bmad-core-by-agent/README.md)
+- Tài liệu gốc của dự án: [`../user-guide.md`](../user-guide.md) · [`../core-architecture.md`](../core-architecture.md) · [`../working-in-the-brownfield.md`](../working-in-the-brownfield.md)
 - Knowledge base chuẩn: `../../bmad-core/data/bmad-kb.md`
