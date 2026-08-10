@@ -328,6 +328,18 @@ graph LR
     H --> I[stats.js + stats.helpers.js<br/>thống kê + token ước lượng]
     I --> J[flattened-codebase.xml]
 ```
+```mermaid
+flowchart LR
+    A[projectRoot.js<br/>phát hiện root] --> B[prompts.js<br/>xác nhận nếu TTY]
+    B --> C[discovery.js<br/>git ls-files hoặc glob]
+    C --> D[ignoreRules.js<br/>.gitignore + defaults + .bmad-flattenignore]
+    D --> E[binary.js<br/>phân loại text/binary]
+    E --> F[files.js<br/>đọc nội dung]
+    F --> G[aggregate.js<br/>gom theo concurrency tự chọn]
+    G --> H[xml.js<br/>CDATA-safe, chẻ chuỗi ]]>]
+    H --> I[stats.js + stats.helpers.js<br/>thống kê + token ước lượng]
+    I --> J[flattened-codebase.xml]
+```
 
 ---
 
