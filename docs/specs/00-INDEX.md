@@ -20,7 +20,7 @@ Bộ tài liệu chi tiết theo từng thành phần của thư mục `bmad-cor
 ## Bản đồ nhanh hệ thống
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph SRC["Nguồn (repository)"]
         A["bmad-core/<br/>10 agent · 21 task · 13 template<br/>6 checklist · 6 data · 6 workflow · 4 team"]
         B["common/<br/>task & util dùng chung"]
