@@ -26,7 +26,15 @@ const AGENT_DIRS = {
 const EXTRAS = {
   qa: { data: ['test-levels-framework.md', 'test-priorities-matrix.md'] },
   sm: { tasks: ['create-brownfield-story.md'] },
-  pm: { tasks: ['create-brownfield-story.md'] },
+  pm: { tasks: ['create-brownfield-story.md', 'shard-doc_vn.md'] },
+  po: { tasks: ['shard-doc_vn.md'] },
+  'bmad-master': { tasks: ['shard-doc_vn.md'] },
+};
+
+// Biến thể/bản dịch của file agent: copy thêm vào cùng thư mục agent gốc
+const AGENT_VARIANTS = {
+  analyst: ['analyst_vn.md'],
+  pm: ['pm_vn.md'],
 };
 
 const DEP_TYPES = ['tasks', 'templates', 'checklists', 'data', 'utils', 'workflows'];
@@ -100,6 +108,13 @@ for (const [agentId, dirName] of Object.entries(AGENT_DIRS)) {
   const agentSrc = path.join(SRC_CORE, 'agents', `${agentId}.md`);
   const agentDir = path.join(OUT, dirName);
   copyInto(agentSrc, agentDir, `AGENT-${agentId}.md`);
+
+  // Bản dịch / biến thể của cùng agent
+  for (const variant of AGENT_VARIANTS[agentId] || []) {
+    const vSrc = path.join(SRC_CORE, 'agents', variant);
+    if (fs.existsSync(vSrc)) copyInto(vSrc, agentDir, `AGENT-${variant}`);
+    else missing.push(`${agentId}: KHÔNG tìm thấy biến thể agents/${variant}`);
+  }
 
   const deps = extractDeps(fs.readFileSync(agentSrc, 'utf8'));
   const extras = EXTRAS[agentId] || {};

@@ -15,27 +15,29 @@ Thư mục này là **bản copy** của `bmad-core/` + `common/`, được sắ
 
 | Chỉ số | Giá trị |
 |---|---|
-| File nguồn (`bmad-core/` + `common/`) | **71** |
-| File nguồn đã được sắp xếp | **71** (100%) |
+| File nguồn (`bmad-core/` + `common/`) | **74** |
+| File nguồn đã được sắp xếp | **74** (100%) |
 | File nguồn **bị bỏ sót** | **0** |
-| Tổng số bản copy trong cây này | **136** |
-| Bản copy khớp hash SHA-256 với file gốc | **136 / 136** |
+| Tổng số bản copy trong cây này | **141** |
+| Bản copy khớp hash SHA-256 với file gốc | **141 / 141** |
 | File gốc bị thay đổi | **0** |
+
+Bao gồm cả 3 file bản dịch tiếng Việt mới thêm vào repo: `agents/analyst_vn.md`, `agents/pm_vn.md`, `tasks/shard-doc_vn.md`.
 
 ## Bảng thư mục
 
 | Thư mục | Agent | Tài nguyên |
 |---|---|---|
 | [`00-shared-dung-chung/`](./00-shared-dung-chung/) | — (dùng chung) | 1 config · 4 agent-teams · 6 workflows · 2 utils |
-| [`01-analyst-mary-business-analyst/`](./01-analyst-mary-business-analyst/) | Mary 📊 Business Analyst | 5 tasks · 4 templates · 2 data |
-| [`02-pm-john-product-manager/`](./02-pm-john-product-manager/) | John 📋 Product Manager | 8 tasks · 2 templates · 2 checklists · 1 data |
+| [`01-analyst-mary-business-analyst/`](./01-analyst-mary-business-analyst/) | Mary 📊 Business Analyst | 5 tasks · 4 templates · 2 data · +bản dịch `AGENT-analyst_vn.md` |
+| [`02-pm-john-product-manager/`](./02-pm-john-product-manager/) | John 📋 Product Manager | 9 tasks · 2 templates · 2 checklists · 1 data · +bản dịch `AGENT-pm_vn.md` |
 | [`03-architect-winston/`](./03-architect-winston/) | Winston 🏗️ Architect | 4 tasks · 4 templates · 1 checklist · 1 data |
 | [`04-ux-expert-sally/`](./04-ux-expert-sally/) | Sally 🎨 UX Expert | 3 tasks · 1 template · 1 data |
-| [`05-po-sarah-product-owner/`](./05-po-sarah-product-owner/) | Sarah 📝 Product Owner | 4 tasks · 1 template · 2 checklists |
+| [`05-po-sarah-product-owner/`](./05-po-sarah-product-owner/) | Sarah 📝 Product Owner | 5 tasks · 1 template · 2 checklists |
 | [`06-sm-bob-scrum-master/`](./06-sm-bob-scrum-master/) | Bob 🏃 Scrum Master | 4 tasks · 1 template · 1 checklist |
 | [`07-dev-james-developer/`](./07-dev-james-developer/) | James 💻 Full Stack Developer | 3 tasks · 1 checklist |
 | [`08-qa-quinn-test-architect/`](./08-qa-quinn-test-architect/) | Quinn 🧪 Test Architect | 6 tasks · 2 templates · 3 data |
-| [`09-bmad-master/`](./09-bmad-master/) | 🧙 BMad Master | 13 tasks · 11 templates · 6 checklists · 4 data · 6 workflows |
+| [`09-bmad-master/`](./09-bmad-master/) | 🧙 BMad Master | 14 tasks · 11 templates · 6 checklists · 4 data · 6 workflows |
 | [`10-bmad-orchestrator/`](./10-bmad-orchestrator/) | 🎭 BMad Orchestrator | 3 tasks · 2 data · 1 util |
 
 ---
@@ -58,6 +60,7 @@ utils/        bmad-doc-template.md (đặc tả cú pháp template)
 
 ```text
 AGENT-analyst.md
+AGENT-analyst_vn.md   ← bản dịch tiếng Việt
 tasks/      advanced-elicitation · create-deep-research-prompt · create-doc
             document-project · facilitate-brainstorming-session
 templates/  brainstorming-output · competitor-analysis · market-research · project-brief
@@ -68,9 +71,11 @@ data/       bmad-kb · brainstorming-techniques
 
 ```text
 AGENT-pm.md
+AGENT-pm_vn.md        ← bản dịch tiếng Việt
 tasks/       brownfield-create-epic · brownfield-create-story · correct-course
              create-deep-research-prompt · create-doc · execute-checklist · shard-doc
              create-brownfield-story ⚠️(bổ sung thủ công — xem mục Ghi chú)
+             shard-doc_vn ⚠️(bản dịch, bổ sung thủ công)
 templates/   brownfield-prd · prd
 checklists/  change-checklist · pm-checklist
 data/        technical-preferences
@@ -100,6 +105,7 @@ data/        technical-preferences
 ```text
 AGENT-po.md
 tasks/       correct-course · execute-checklist · shard-doc · validate-next-story
+             shard-doc_vn ⚠️(bản dịch, bổ sung thủ công)
 templates/   story
 checklists/  change-checklist · po-master-checklist
 ```
@@ -177,9 +183,19 @@ Các file được nhân bản nhiều nhất (đây là lý do phải copy ch�
 
 ---
 
-## Ghi chú: 4 file KHÔNG được agent nào khai báo
+## Ghi chú: 7 file KHÔNG được agent nào khai báo
 
-Trong quá trình sắp xếp, script phát hiện 4 file nằm trong `bmad-core` nhưng **không xuất hiện trong `dependencies` của bất kỳ agent nào**. Chúng vẫn được đưa vào thư mục hợp lý theo chức năng (đánh dấu ⚠️ "bổ sung thủ công"), nên **không có file nào bị bỏ sót**:
+Trong quá trình sắp xếp, script phát hiện 7 file nằm trong `bmad-core` nhưng **không xuất hiện trong `dependencies` của bất kỳ agent nào**. Chúng vẫn được đưa vào thư mục hợp lý theo chức năng (đánh dấu ⚠️ "bổ sung thủ công"), nên **không có file nào bị bỏ sót**.
+
+**Ba file bản dịch tiếng Việt** (mới thêm vào repo, chưa được nối vào hệ thống dependency):
+
+| File | Đã đặt vào | Ghi chú |
+|---|---|---|
+| `agents/analyst_vn.md` | `01-analyst/AGENT-analyst_vn.md` | Bản dịch của `analyst.md`. Muốn gọi được trong IDE, cần chạy lại installer để sinh command cho agent id `analyst_vn` |
+| `agents/pm_vn.md` | `02-pm/AGENT-pm_vn.md` | Bản dịch của `pm.md`, tương tự trên |
+| `tasks/shard-doc_vn.md` | `02-pm` · `05-po` · `09-bmad-master` (`tasks/`) | Bản dịch của `shard-doc.md`. Chưa agent nào khai báo — muốn dùng qua lệnh, thêm vào `dependencies.tasks` của `pm.md`/`po.md` |
+
+**Bốn file gốc chưa được khai báo:**
 
 | File | Vấn đề | Đã đặt vào | Lý do |
 |---|---|---|---|
